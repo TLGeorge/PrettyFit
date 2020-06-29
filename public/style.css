@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: rgb(219, 21, 87);
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -71,7 +71,7 @@ select:hover {
 
 select:focus {
   border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 1px 3px rgba(177, 4, 154, 0.822);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222;
   outline: none;
