@@ -10,10 +10,10 @@ html,
 body,
 .wrapper {
   height: 100%;
-}
+  }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://media.guestofaguest.com/t_article_content/gofg-media/2018/03/1/50629/29177460_1987438841522225_537407022702788608_o.jpg");
 }
 
 nav {
@@ -22,7 +22,8 @@ nav {
   height: 80px;
   padding: 10px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
+  font-family: 'Qwigley', cursive;
 }
 
 a,
@@ -42,6 +43,8 @@ header {
 
 header h1 {
   transform: skewX(-2deg);
+  font-family: 'Qwigley', cursive;
+  font-size: 3.2rem;
 }
 
 select {
@@ -359,8 +362,10 @@ form > button {
 }
 
 .prev-workout h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   width: 100%;
+  font-family: 'Qwigley', cursive;
+  font-size: 3.2rem;
 }
 
 .prev-workout p {
@@ -417,6 +422,18 @@ form > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.ui.positive.button {
+background-color: purple;
+font-family: 'Qwigley', cursive;
+font-size: 2.2rem;
+}
+
+.ui.blue.button {
+  background-color: rgb(219, 21, 87);
+  font-family: 'Qwigley', cursive;
+  font-size: 2.2rem;
 }
 
 .workout-type,
