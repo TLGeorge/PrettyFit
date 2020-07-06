@@ -9,10 +9,13 @@ const PORT = process.env.PORT || 4000;
 
 const db = require("./models");
 
+const router = express.Router()
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+app.use(router);
 
 // routes
 app.use(require('./routes/htmlroutes.js'))

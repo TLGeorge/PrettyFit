@@ -6,7 +6,7 @@ const db = require("../models");
 //require moment
 const moment = require("moment");
 
-const router = require('express').Router()
+const router = require('express').Router();
 
 //Api routes
 
