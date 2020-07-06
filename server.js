@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 const db = require("./models");
+app.use(db);
 
 const router = express.Router()
 
