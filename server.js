@@ -5,7 +5,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 const db = require("./models");
 
@@ -20,7 +20,6 @@ app.use(require('./routes/apiroutes.js'))
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
     useNewUrlParser: true,
-    useFindAndModify: false
 });
 
 

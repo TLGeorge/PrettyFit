@@ -6,8 +6,8 @@ const API = {
     } catch (err) {
       console.log(err)
     }
+    console.log(res)
     const json = await res.json();
-
     return json[json.length - 1];
   },
   async addExercise(data) {
