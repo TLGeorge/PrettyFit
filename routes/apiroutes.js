@@ -9,6 +9,9 @@ const moment = require("moment");
 const router = require('express').Router();
 
 //Api routes
+router.get('/', function (req, res) {
+    res.redirect('/api/workouts/:id');
+})
 
 router.get("/api/workouts", function (req, res) {
     db.Workout.find({})
