@@ -5,8 +5,8 @@ const db = require("../models");
 
 //require moment
 const moment = require("moment");
-
-const router = require('express').Router();
+const express = require('express')
+let router = express.Router();
 
 //Api routes
 //router.get('/', function (req, res) {
