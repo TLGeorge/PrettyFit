@@ -9,11 +9,11 @@ const moment = require("moment");
 const router = require('express').Router();
 
 //Api routes
-router.get('/', function (req, res) {
-    res.redirect('/api/workouts/:id');
-})
+//router.get('/', function (req, res) {
+//    res.redirect('/api/workouts/:id');
+//})
 
-router.get("/api/workouts", function (req, res) {
+router.get("/workouts", function (req, res) {
     db.Workout.find({})
         .then(dbWorkout => {
             console.log(dbWorkout);
@@ -21,7 +21,7 @@ router.get("/api/workouts", function (req, res) {
         });
 });
 
-router.post("/api/workouts", function (req, res) {
+router.post("/workouts", function (req, res) {
     db.Workout.create({}).then(dbWorkout => {
         console.log(dbWorkout);
         res.json(dbWorkout);
@@ -47,7 +47,7 @@ router.post("/api/workouts", function (req, res) {
 //     });
 // });
 
-router.put('/api/workouts/:id', (req, res) => {
+router.put('/workouts/:id', (req, res) => {
     db.Workout.findByIdAndUpdate(req.params.id, { $push: { exercises: req.body } })
         .then(dbWorkout => {
             res.json(dbWorkout);
@@ -57,7 +57,7 @@ router.put('/api/workouts/:id', (req, res) => {
         });
 })
 
-router.get("/api/workouts/range", function (req, res) {
+router.get("/workouts/range", function (req, res) {
     //use moment to find last sunday, the query for dates greater than that
     //first get today
     let today = moment().day(); //returns a number from 0 to 6
