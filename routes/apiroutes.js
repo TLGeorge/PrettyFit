@@ -1,7 +1,7 @@
 
 //require in the models directory
 const mongoose = require("mongoose");
-const db = require("../models/workout");
+const db = require("../models/index.js");
 
 //require moment
 const moment = require("moment");
